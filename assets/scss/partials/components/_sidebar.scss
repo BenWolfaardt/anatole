@@ -57,9 +57,11 @@
     }
 
     &-profileimage {
-      width: 127px;
-      height: 127px;
+      width: 330px;
+      height: 330px;
       border-radius: 50%;
+      margin: 0 auto;
+      display: block;
     }
 
     &-title {
