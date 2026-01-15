@@ -1,15 +1,19 @@
 
-title = "I'm Jane Doe"
-author = "Jane Doe"
-#copyright = "2020-2021"
-description = "Call me Jane"
+title = "I'm Ben"
+author = "Ben Wolfaardt"
+# TODO: once multi-year update
+# copyright = "2020-2021"
+# description = "Blockchain DeFi Web3 Specialist"
+descriptions = [
+  "Blockchain Specialist",
+  "Smart Contract Developer",
+  "DeFi Enthusiast",
+]
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
-# example ["css/custom.css"]
-customCss = []
-# example ["js/custom.js"]
-customJs = [] 
+customCss = ["css/typewriter.css"]
+customJs = ["js/typewriter.js"] 
 mainSections = ["post"]
 images = ["images/site-feature-image.png"]
 doNotLoadAnimations = false

@@ -1,0 +1,21 @@
+/* Typewriter cursor animation */
+.typewriter-cursor {
+  animation: blink 1s infinite;
+  font-weight: normal;
+  color: var(--accent-color, #64ffda);
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Ensure smooth typewriter text display */
+#typewriter-text {
+  min-height: 1.2em;
+  display: inline-block;
+}
