@@ -1,35 +1,46 @@
-baseURL = "https://example.com"
+# ============================================
+# SITE CONFIGURATION
+# ============================================
+baseURL = "https://benwolfaardt.com"
+title = "Ben Wolfaardt's Website"
 languageCode = "en"
 DefaultContentLanguage = "en"
-title = "Website of Jane Doe"
 
-# theme as hugo module
-#theme = "github.com/lxndrblz/anatole"
-# theme as git submodule
+# ============================================
+# THEME
+# ============================================
+# Theme as hugo module
+# theme = "github.com/lxndrblz/anatole"
+# Theme as git submodule
 theme = "anatole"
 
+# ============================================
+# CONTENT SETTINGS
+# ============================================
 summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
 
-
-
-# Syntax highlighting
+# ============================================
+# SYNTAX HIGHLIGHTING
+# ============================================
 pygmentsUseClasses = true   
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
-# Localized dates requires Hugo version 0.87.0
+# ============================================
+# LOCALIZATION
+# ============================================
+# Requires Hugo version 0.87.0+
 localizedDates = false
 
-# Mermaid
-[params.mermaid]
-enable = true
-
+# ============================================
+# MARKUP CONFIGURATION
+# ============================================
 [markup]
-    [markup.goldmark]
-      [markup.goldmark.renderer]
-        unsafe=true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
         enable = true
@@ -37,26 +48,44 @@ enable = true
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
 
+# ============================================
+# TAXONOMIES
+# ============================================
 [taxonomies]
-    category = "categories"
-    series = "series"
-    tag = "tags"
+  category = "categories"
+  series = "series"
+  tag = "tags"
 
+# ============================================
+# RELATED CONTENT
+# ============================================
 [related]
   includeNewer = true
   threshold = 80
   toLower = true
+
 [[related.indices]]
   name = 'keywords'
   weight = 100
+
 [[related.indices]]
   name = 'tags'
   weight = 80
 
+# ============================================
+# THIRD-PARTY SERVICES
+# ============================================
 [services]
-# Enable Disqus.Disqus.Shortname
+  # Disqus Comments
   [services.disqus]
-    #shortname = 'your-disqus-shortname'
-# Google Analytics
+    # shortname = 'your-disqus-shortname'
+  
+  # Google Analytics
   [services.googleAnalytics]
-    #ID = 'G-MEASUREMENT_ID'
+    # ID = 'G-MEASUREMENT_ID'
+
+# ============================================
+# MERMAID DIAGRAMS
+# ============================================
+[params.mermaid]
+  enable = true
