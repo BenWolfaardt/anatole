@@ -4,11 +4,12 @@
   weight = 100
   url = "/"
 
-  [[main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/post/"
+  # TODO: Add this in once I have enough posts
+  # [[main]]
+  # name = "Posts"
+  # weight = 200
+  # identifier = "posts"
+  # url = "/post/"
 
   [[main]]
   name = "Portfolio"
@@ -21,25 +22,6 @@
   weight = 400
   identifier = "about"
   url = "/about/"
-
-  [[main]]
-  name = "Accomplishments"
-  weight = 500
-  identifier = "accomplishments"
-
-  [[main]]
-  name = "Awards"
-  weight = 510
-  identifier = "awards"
-  url = "/awards/"
-  parent = "accomplishments"  
-
-  [[main]]
-  name = "Certifications"
-  weight = 520
-  identifier = "certifications"
-  url = "/certifications/"
-  parent = "accomplishments"
 
   [[main]]
   name = "Contact"
